@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about me, my hobbies, skills, and passions.">
+    <title>About Me | Anush Anand</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to JavaScript -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Full-Page Background -->
+    <div class="background">
+        <!-- Header -->
+        <header class="header">
+            <h1>Anush Anand</h1>
+        </header>
+
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="skills.html">Skills</a>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776; <!-- Hamburger icon -->
+                </div>
+            </nav>
+            <div class="overlay" onclick="closeMenu()"></div>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- About Me Section -->
+            <section class="about">
+                <h2>About Me</h2>
+                <hr>
+                <p>
+                    I am a junior at the <span class="highlight">University of Denver</span> pursuing a <span class="highlight">B.S. in Computer Science</span> and minors in <span class="highlight">Mathematics</span> and <span class="highlight">Psychology</span>.
+                </p>
+
+                <!-- First Image -->
+                <div class="image-container">
+                    <img src="About/DU.jpg" alt="Picture of University of Denver" class="responsive-image">
+                </div>
+
+                <!-- Research Information -->
+                <p>
+                    I currently work as a research assistant for the <span class="highlight">Vision, Perception, and Emotional Cognition Lab</span> on campus at the <span class="highlight">University of Denver</span>. I design vision experiments utilizing <span class="highlight">eye-tracking and neural activity</span> and analyze the data to investigate the responses and perception to different visual stimuli.
+                </p>
+
+                <!-- Additional Images -->
+                <div class="image-grid-horizontal">
+                    <div class="image-item">
+                        <img src="About/vpec1.jpeg" alt="Vision Lab Experiment" class="responsive-image">
+                    </div>
+                    <div class="image-item">
+                        <img src="About/vpec2.jpeg" alt="Cognition Experiment" class="responsive-image">
+                    </div>
+                </div>
+
+                <!-- Study Abroad Information -->
+                <p>
+                    During the Fall of my Junior year, I studied abroad at <span class="highlight">Queen Mary University of London</span> where I was able to immerse myself in a diverse environment and travel across Europe. I was also able to watch my favorite soccer team, <span class="highlight chelsea">Chelsea</span>, play a few times.
+                </p>
+
+                <!-- Additional Images -->
+                <div class="image-grid-horizontal">
+                    <div class="image-item">
+                        <img src="About/qmul.jpg" alt="Queen Mary University of London" class="responsive-image">
+                    </div>
+                    <div class="image-item">
+                        <img src="About/london.jpg" alt="London" class="responsive-image">
+                    </div>
+                </div>
+
+                <!-- Link to Gallery -->
+                <p>
+                    To see some pictures from my experience abroad, check the <a href="gallery.html" class="gallery-link">gallery</a>!
+                </p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Anush Anand</p>
+        </footer>
+    </div>
+</body>
+</html>

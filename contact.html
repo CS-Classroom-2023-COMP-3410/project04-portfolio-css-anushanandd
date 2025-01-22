@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with me!">
+    <title>Contact | Anush Anand</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to JavaScript -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Full-Page Background -->
+    <div class="background">
+        <!-- Header -->
+        <header class="header">
+            <h1>Anush Anand</h1>
+        </header>
+
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="skills.html">Skills</a>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776; <!-- Hamburger icon -->
+                </div>
+            </nav>
+            <div class="overlay" onclick="closeMenu()"></div>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Contact Section -->
+            <section class="contact">
+                <h2>Contact Me</h2>
+                <hr>
+                <p>If you have any questions, suggestions, or just want to say hello, feel free to reach out to me using the form below!</p>
+
+                <!-- Contact Form -->
+                <form action="mailto:anushanand0021@gmail.com" method="GET" class="contact-form">
+                    <div class="form-group centered">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group centered">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="body" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group centered">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Anush Anand</p>
+        </footer>
+    </div>
+</body>
+</html>

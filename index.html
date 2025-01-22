@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta Information -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Welcome to my personal portfolio website!">
+	<title>Home | Anush Anand</title>
+	<!-- Link to CSS -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- Link to JavaScript -->
+	<script defer src="script.js"></script>
+</head>
+<body class="home-page">	
+	<!-- Full-Page Background -->
+	<div class="background">
+		<!-- Header -->
+		<header class="header">
+			<h1>Anush Anand</h1>
+		</header>
+
+		<!-- Navigation Bar -->
+		<nav class="navbar">
+			<div class="navbar-container">
+				<a href="index.html">Home</a>
+				<a href="about.html">About Me</a>
+				<a href="contact.html">Contact</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="skills.html">Skills</a>
+			</div>
+			<div class="hamburger" onclick="toggleMenu()">
+				&#9776; <!-- Hamburger icon -->
+			</div>
+		</nav>
+		<div class="overlay" onclick="closeMenu()"></div>
+					
+		<!-- Main Content -->
+		<main class="content">
+			<!-- Introduction Section -->
+			<section class="introduction">
+				<h2>Hello, I'm Anush!</h2>
+				<hr>
+				<p>I am a junior at the <span class="highlight">University of Denver</span> pursuing a <span class="highlight">B.S. in Computer Science</span> and minors in <span class="highlight">Mathematics</span> and <span class="highlight">Psychology</span>.</p>
+				<p>Explore my portfolio to learn more about me and my interests!</p>
+				<p><i>"You can’t control the wind but you can adjust your sails."</i></p>
+			</section>
+
+			<!-- Favorites Section -->
+			<section class="favorites">
+				<h3>Favorites</h3>
+				<div class="slideshow-container">
+					<div class="slide">
+						<img src="Favorites/kanye.jpg" alt="Kanye">
+						<p>Artist: Kanye West</p>
+					</div>
+					<div class="slide">
+						<img src="Favorites/vindaloo.jpg" alt="Lamb Vindaloo">
+						<p>Food: Lamb Vindaloo</p>
+					</div>
+					<div class="slide">
+						<img src="Favorites/chelsea.png" alt="Chelsea FC">
+						<p>Soccer Team: Chelsea FC</p>
+					</div>
+					<div class="slide">
+						<img src="Favorites/neymar.jpg" alt="Neymar">
+						<p>Soccer Player: Neymar</p>
+					</div>
+					<div class="slide">
+						<img src="Favorites/idiots.jpg" alt="3 Idiots">
+						<p>Movie: 3 Idiots</p>
+					</div>
+					<div class="slide">
+						<img src="Favorites/regular.jpg" alt="Regular Show">
+						<p>TV Show: Regular Show</p>
+					</div>
+					<!-- Arrows -->
+					<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+					<a class="next" onclick="changeSlide(1)">&#10095;</a>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<p>&copy; 2025 Anush Anand</p>
+		</footer>
+	</div>
+</body>
+</html>

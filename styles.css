@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
+/* Global Styles */
+body {
+    font-family: 'Source Sans 3';
+    font-size: 16px;
+    color: black; /* Default text color */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+}
+
+/* Full-Page Background */
+.background {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #800000;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+h2 {
+    color: #800000; /* Match the red color used in the home page */
+    text-align: center; /* Optional: Keep the alignment consistent */
+}
+
+hr {
+    border: none; /* Remove default styling */
+    height: 2px; /* Set the thickness of the line */
+    background-color: #d4af37; /* Gold color */
+    width: 100%; /* Full width */
+    margin: 10px auto; /* Add some spacing */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Makes navigation responsive */
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.content {
+    width: 90%;
+    max-width: 1200px; /* Wider content box */
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.introduction h2 {
+    text-align: center;
+    color: #800000;
+}
+
+.introduction p {
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #d4af37;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar a {
+        margin: 5px; /* Reduce spacing between links */
+    }
+
+    .favorites-grid {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery-item p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Wider Content Box */
+.wider-content {
+    max-width: 1200px; /* Adjust as needed for the desired width */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between form elements */
+    margin-top: 20px;
+}
+
+.contact-form .form-group {
+    width: 100%;
+    max-width: 500px; /* Limit form width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #a00000; /* Slightly lighter red on hover */
+}
+
+/* Slideshow */
+.slideshow-container {
+    display: block; /* Ensure the slideshow is always visible */
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none; /* Initially hide all slides */
+    text-align: center;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.slide p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* General Reset for Images */
+.responsive-image {
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Horizontal Image Grid */
+.image-grid-horizontal {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure images wrap to the next line on smaller screens */
+    max-width: 100%; /* Prevent grid from overflowing */
+    box-sizing: border-box;
+}
+
+.image-item {
+    flex: 1 1 calc(50% - 20px); /* Two items per row with spacing */
+    max-width: calc(50% - 20px); /* Prevent items from exceeding half the container width */
+    box-sizing: border-box; /* Include padding/border in width calculations */
+}
+
+/* Default: Grid Layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+
+/* Smaller Devices: Slideshow */
+@media (max-width: 768px) {
+    .gallery-grid {
+        display: none; /* Hide grid layout */
+    }
+
+    .slideshow-container {
+        display: block; /* Show slideshow */
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .slide {
+        display: none; /* All slides hidden by default */
+        text-align: center;
+    }
+
+    .slide img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        cursor: pointer;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 3px;
+        font-size: 18px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .image-item {
+        flex: 1 1 100%; /* Switch to single-column layout on small screens */
+        max-width: 100%;
+    }
+}
+
+/* Overlay Styles */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Above other elements */
+}
+
+/* Active Overlay */
+.overlay.active {
+    display: block; /* Show overlay when menu is open */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1000; /* Above overlay */
+}
+
+.navbar-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px; /* Limit the width of the navbar on larger screens */
+    width: 100%;
+    justify-content: center; /* Center the links */
+}
+
+/* Links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-container {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar-container.active {
+        display: flex; /* Show links when menu is toggled */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+}
+
+@media (min-width: 769px) {
+    .home-page .slide img {
+        max-width: 50%; /* Adjust the size of the image to 50% of the container */
+        height: auto;   /* Maintain aspect ratio */
+        border-radius: 8px; /* Optional: Rounded corners */
+        margin: 0 auto; /* Center the image */
+        display: block; /* Ensure the image is block-level for centering */
+    }
+}

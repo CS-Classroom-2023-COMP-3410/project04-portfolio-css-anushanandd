@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery of my travels and experiences.">
+    <title>Gallery | Anush Anand</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to JavaScript -->
+    <script defer src="script.js"></script>
+    <!-- Link to JavaScript -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Full-Page Background -->
+    <div class="background">
+        <!-- Header -->
+        <header class="header">
+            <h1>Anush Anand</h1>
+        </header>
+
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="skills.html">Skills</a>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776; <!-- Hamburger icon -->
+                </div>
+            </nav>
+            <div class="overlay" onclick="closeMenu()"></div>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Page Heading -->
+            <section class="gallery">
+                <h2>Gallery</h2>
+                <hr>
+                <p>Gallery of my travels and experiences.</p>
+
+                <!-- Gallery Grid for Larger Devices -->
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="Abroad/bigben.jpg" alt="Big Ben">
+                        <p>London, UK</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Abroad/seven.JPG" alt="Seven Sisters">
+                        <p>Seven Sisters Cliffs, UK</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Abroad/geneva.jpg" alt="Geneva">
+                        <p>Geneva, Switzerland</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Abroad/interlaken.JPG" alt="Interlaken">
+                        <p>Interlaken, Switzerland</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Abroad/barcelona.jpg" alt="Barcelona">
+                        <p>Barcelona, Spain</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Abroad/madrid.JPG" alt="Madrid">
+                        <p>Madrid, Spain</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Abroad/marrakesh.JPG" alt="Marrakesh">
+                        <p>Marrakesh, Morocco</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Abroad/sahara.JPG" alt="Sahara Desert">
+                        <p>Sahara Desert, Morocco/Algeria</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Abroad/rome.JPG" alt="Rome">
+                        <p>Rome, Italy</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Abroad/florence.JPG" alt="Florence">
+                        <p>Florence, Italy</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Abroad/venice.JPG" alt="Venice">
+                        <p>Venice, Italy</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Abroad/lisbon.JPG" alt="Lisbon">
+                        <p>Lisbon, Portugal</p>
+                    </div>
+                </div>
+
+                <!-- Slideshow for Smaller Devices -->
+                <div class="slideshow-container">
+                    <div class="slide">
+                        <img src="Abroad/bigben.jpg" alt="Big Ben">
+                        <p>London, UK</p>
+                    </div>
+                    <div class="slide">
+                        <img src="Abroad/seven.JPG" alt="Seven Sisters">
+                        <p>Seven Sisters Cliffs, UK</p>
+                    </div>
+                    <div class="slide">
+                        <img src="Abroad/geneva.jpg" alt="Geneva">
+                        <p>Geneva, Switzerland</p>
+                    </div>
+                    <div class="slide">
+                        <img src="Abroad/interlaken.JPG" alt="Interlaken">
+                        <p>Interlaken, Switzerland</p>
+                    </div>
+                    <div class="slide">
+                        <img src="Abroad/barcelona.jpg" alt="Barcelona">
+                        <p>Barcelona, Spain</p>
+                    </div>
+                    <div class="slide">
+                        <img src="Abroad/madrid.JPG" alt="Madrid">
+                        <p>Madrid, Spain</p>
+                    </div>
+                    <div class="slide">
+                        <img src="Abroad/marrakesh.JPG" alt="Marrakesh">
+                        <p>Marrakesh, Morocco</p>
+                    </div>
+                    <div class="slide">
+                        <img src="Abroad/sahara.JPG" alt="Sahara Desert">
+                        <p>Sahara Desert, Morocco/Algeria</p>
+                    </div>
+                    <div class="slide">
+                        <img src="Abroad/rome.JPG" alt="Rome">
+                        <p>Rome, Italy</p>
+                    </div>
+                    <div class="slide">
+                        <img src="Abroad/florence.JPG" alt="Florence">
+                        <p>Florence, Italy</p>
+                    </div>
+                    <div class="slide">
+                        <img src="Abroad/venice.JPG" alt="Venice">
+                        <p>Venice, Italy</p>
+                    </div>
+                    <div class="slide">
+                        <img src="Abroad/lisbon.JPG" alt="Lisbon">
+                        <p>Lisbon, Portugal</p>
+                    </div>
+                    <!-- Arrows -->
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Anush Anand</p>
+        </footer>
+    </div>
+</body>
+</html>
